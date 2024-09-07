@@ -18,12 +18,12 @@ const footerItems: FooterItems = [
     ],
   },
   {
-    title: 'Product',
+    title: 'Our Products',
     items: [
-      { title: 'Features', href: '/features' },
-      { title: 'Something', href: '/something' },
-      { title: 'Something else', href: '/something-else' },
-      { title: 'And something else', href: '/and-something-else' },
+      { title: 'Bebler', href: 'https://www.ctdi.co.id/bebler.php' },
+      { title: 'Bebold', href: 'https://www.ctdi.co.id/bebold.php' },
+      { title: 'Intellisearchdocs', href: 'https://www.ctdi.co.id/beproper.php' },
+      { title: 'Bencher', href: 'https://www.ctdi.co.id/bencher.php' },
     ],
   },
   {
@@ -35,15 +35,15 @@ const footerItems: FooterItems = [
       { title: 'Help Center', href: '/help-center' },
     ],
   },
-  {
-    title: 'Something',
-    items: [
-      { title: 'Features2', href: '/features2' },
-      { title: 'Something2', href: '/something2' },
-      { title: 'Something else2', href: '/something-else2' },
-      { title: 'And something else2', href: '/and-something-else2' },
-    ],
-  },
+  // {
+  //   title: 'Something',
+  //   items: [
+  //     { title: 'Features2', href: '/features2' },
+  //     { title: 'Something2', href: '/something2' },
+  //     { title: 'Something else2', href: '/something-else2' },
+  //     { title: 'And something else2', href: '/and-something-else2' },
+  //   ],
+  // },
 ];
 
 export default function Footer() {
@@ -75,7 +75,7 @@ export default function Footer() {
               </a>
             </NextLink>
           </ShareBar>
-          <Copyright>&copy; Copyright 2021 My Saas Startup</Copyright>
+          <Copyright>&copy; Copyright {new Date().getFullYear()} PT. Cipta Tata Kelola Dokumen Indonesia</Copyright>
         </BottomBar>
       </Container>
     </FooterWrapper>

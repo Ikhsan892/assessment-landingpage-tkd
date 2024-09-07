@@ -79,11 +79,7 @@ union DocumentNode = PostsDocument
 
 type Posts {
   title: String
-  description: String
-  date: String
-  tags: String
-  imageUrl: String
-  body: JSON
+  body: String
 }
 
 type PostsDocument implements Node & Document {
@@ -120,11 +116,7 @@ input DocumentMutation {
 
 input PostsMutation {
   title: String
-  description: String
-  date: String
-  tags: String
-  imageUrl: String
-  body: JSON
+  body: String
 }
 
 schema {

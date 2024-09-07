@@ -10,26 +10,26 @@ import { media } from 'utils/media';
 
 const TABS = [
   {
-    title: 'Find relevant media contacts - multiline title',
+    title: 'Collaboration At Scale',
     description:
-      '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.</p>',
-    imageUrl: '/demo-illustration-3.png',
+      '<p>Design surveys together, share multiple surveys and surveyors result to a Workgroup, and easily set roles and permissions.</p>',
+    imageUrl: '/collaboration.png',
     baseColor: '249,82,120',
     secondColor: '221,9,57',
   },
   {
-    title: 'Another amazing feature',
+    title: 'Online & Realtime Reporting',
     description:
-      '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.</p>',
-    imageUrl: '/demo-illustration-4.png',
+      "<p>The review of an online assessment and survey is often faster than that of an offline assessment. Usually you immediately receive the results in your desktop or mailbox. After this you discuss the results of the online assessment with an advisor, either by phone or at the assessor's office. Then you can grant (or withhold) permission to forward the assessment report to the employer.</p>",
+    imageUrl: '/reporting.png',
     baseColor: '57,148,224',
     secondColor: '99,172,232',
   },
   {
-    title: 'And yet... another truly fascinating feature',
+    title: 'Rich Components',
     description:
-      '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quidem ipsam ratione dicta quis cupiditate consequuntur laborum ducimus iusto velit.</p>',
-    imageUrl: '/demo-illustration-5.png',
+      '<p>We have 3 main components, Questionaire, Inventory, and Volume.The best part? Questionnaires are flexible—complete them anytime, anywhere, at your convenience.Looking to prepare? Take advantage of various practice assessments available online to boost your confidence and performance!</p>',
+    imageUrl: '/components.png',
     baseColor: '88,193,132',
     secondColor: '124,207,158',
   },
@@ -53,7 +53,7 @@ export default function FeaturesGallery() {
     const isActive = singleTab.title === currentTab.title;
 
     return (
-      <Tab isActive={isActive} key={idx} onClick={() => handleTabClick(idx)}>
+      <Tab isActive={isActive} key={idx} onClick={() => handleTabClick(idx)} id="#features">
         <TabTitleContainer>
           <CircleContainer>
             <ThreeLayersCircle baseColor={isActive ? 'transparent' : singleTab.baseColor} secondColor={singleTab.secondColor} />
@@ -75,7 +75,7 @@ export default function FeaturesGallery() {
 
   return (
     <FeaturesGalleryWrapper>
-      <Content>
+      <Content id="features">
         <OverTitle>features</OverTitle>
         <SectionTitle>What are you signing in for?</SectionTitle>
       </Content>

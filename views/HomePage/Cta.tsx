@@ -13,22 +13,17 @@ export default function Cta() {
     <CtaWrapper>
       <Container>
         <Stack>
-          <OverTitle>Lorem ipsum dolor sit amet</OverTitle>
-          <SectionTitle>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus delectus?</SectionTitle>
+          <OverTitle>Try Boost Now</OverTitle>
+          <SectionTitle>Elevate Your Productivity with Boost</SectionTitle>
           <Description>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda beatae accusamus deleniti nihil quas tempora numquam, vitae
-            culpa.
+            Discover how Boost can help you manage tasks more efficiently, stay organized, and achieve your goals faster. It's time to
+            simplify your work and focus on what really matters.
           </Description>
           <ButtonGroup>
             <NextLink href="#early-access" passHref>
               <Button>
-                Subscribe to the newsletter <span>&rarr;</span>
+                Try Boost Now <span>&rarr;</span>
               </Button>
-            </NextLink>
-            <NextLink href="#whitepaper" passHref>
-              <OutlinedButton transparent>
-                Features <span>&rarr;</span>
-              </OutlinedButton>
             </NextLink>
           </ButtonGroup>
         </Stack>
