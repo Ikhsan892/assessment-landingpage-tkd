@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "yarn tinacms server:start -c \"next dev\"",
     "build": "next build",
-    "start": "yarn tinacms server:start -c \"next start\"",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
